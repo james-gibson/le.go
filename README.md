@@ -2,9 +2,10 @@
 
 **The citation is the event; the medium of consumption is the projection.**
 
-An educational `le.gume` seed about how citation stopped being a shelf address
-and became a pile of *magic strings* — and how to snap those strings back into
-bricks you can take apart and rebuild.
+An educational `le.gume` seed deploy — the **42i system**, introduced in one
+place, using **citations as its domain**. How citation stopped being a shelf
+address and became a pile of *magic strings*, and how to snap those strings back
+into bricks you can take apart and rebuild.
 
 <p align="center">
   <a href="https://github.com/james-gibson/le.go/actions/workflows/deploy.yml"><img src="https://shieldcn.dev/github/ci/james-gibson/le.go.svg?workflow=deploy.yml&branch=main&variant=secondary" alt="deploy" /></a>
@@ -18,7 +19,7 @@ bricks you can take apart and rebuild.
 
 ## What this is
 
-A **Lego instruction manual** for one hard idea, built around a real case: a
+A **brick-set instruction manual** for one hard idea, built around a real case: a
 haunted-polka-country-juggalo-trap anthem whose creator spoke his own remix
 grant into the recording at `3:02`.
 
@@ -45,9 +46,9 @@ it as a Chicago footnote are **four projections of one coordinate**.
 - **`le.gume` (the pod):** a legume splits cleanly along two seams — local time
   and UTC, real axis and imaginary axis — and fixes inert noise into nutrients.
 - **`le.go` (the bricks):** Chicago/MLA/APA citations are *glued models*
-  (someone squirted punctuation glue — *the Kragle* — over five real facts). In
-  `le.go`, every fact is a studded brick: snap them into a complex-space
-  universe, then unsnap and re-project into any style at will.
+  (someone squirted punctuation glue over five real facts). In `le.go`, every
+  fact is a studded brick: snap them into a complex-space universe, then unsnap
+  and re-project into any style at will.
 - **`le.go` ("let go" / *leggo*):** at `3:02` the artist let go of the gold
   throne so his art could be sampled and brought back. Academia has to let go of
   the superstition that the punctuation string *is* the scholarship.
@@ -61,9 +62,9 @@ it as a Chicago footnote are **four projections of one coordinate**.
 | `/seeds/` | one entrance per reader background |
 | `/isotopes/` | the 42i isotope model |
 | `/philosophy/` | *Open Arms* philosophy page with per-line copy-citation |
-| `/projector/` | snap bricks, rotate `R⁰..R³`, project to APA/MLA/Chicago/… |
+| `/projector/` | cast flat shadows (it does not fix them); rotate only in the 42i brief |
 | `/draft/` | Marvin the Paranoid Android's 32-years-late RFC 1630 erratum |
-| `/design/` | the live Lego design system |
+| `/design/` | the live 42i-set design system — why the classic styles are lossy, as bricks |
 | `/bare/` | zero-CSS, zero-JS, zero-ad projection (for the historian) |
 | `/deck.html` | a self-contained slide deck for the group video discussion |
 

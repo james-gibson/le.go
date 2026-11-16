@@ -18,7 +18,7 @@ SikMadMan. (2026). Open Arms [Video]. YouTube.
 
 Try snapping a timestamped remix licence onto that. You can't. The glue has set.
 
-In `le.go`, every fact is a **studded brick** with standard clutch power. Snap them together into a complex-space universe, then unsnap and re-project them into Chicago, MLA, or APA at will — without stepping on a bare magic string in the dark.
+In `le.go`, every fact is a **studded brick** with standard snap-fit. Snap them together into a complex-space universe, then unsnap and re-project them into Chicago, MLA, or APA at will — without stepping on a bare magic string in the dark.
 
 ## Why this song?
 

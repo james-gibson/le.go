@@ -13,13 +13,13 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="border-b-4 border-lego-red-500 bg-lego-white">
+    <header className="border-b-4 border-brick-red-500 bg-brick-white">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-3 px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <span className="lego-shadow flex h-9 w-9 items-center justify-center rounded-lg bg-lego-yellow-400 text-sm font-black text-lego-ink">
+          <span className="brick-shadow flex h-9 w-9 items-center justify-center rounded-lg bg-brick-yellow-400 text-sm font-black text-brick-ink">
             L
           </span>
-          <span className="text-lg font-black tracking-tight text-lego-ink">
+          <span className="text-lg font-black tracking-tight text-brick-ink">
             le.go
           </span>
         </Link>
@@ -31,7 +31,7 @@ export function SiteHeader() {
               end={n.end}
               className={({ isActive }) =>
                 `rounded-md px-2 py-1 font-semibold transition-colors ${
-                  isActive ? 'bg-lego-red-500 text-lego-white' : 'text-lego-ink/70 hover:bg-lego-cream hover:text-lego-ink'
+                  isActive ? 'bg-brick-red-500 text-brick-white' : 'text-brick-ink/70 hover:bg-brick-cream hover:text-brick-ink'
                 }`
               }
             >
