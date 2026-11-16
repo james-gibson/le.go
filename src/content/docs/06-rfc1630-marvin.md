@@ -37,4 +37,6 @@ Every revision of this draft — every edit Marvin made, every copy written in a
 
 The branch is the claim's *isotope*: the same element (the draft) at a different mass number (the revisions it carries). Each new opening resets the anchor to `42`, and the out-of-order arrival is the `42i` distance it collects on the way to you.
 
+Git's reflog makes the joke literal: a new branch opens with `branch: Created from …` — *opened for the first time* — and there is no earlier entry where it pointed somewhere else — *never having been wrong*. The drift only enters the reflog later, as `reset` / `rebase` / force-push entries. This is also why issue `42` merged: forty-one branches, each opened for the first time and never having been wrong, squash-merged to make room for the answer.
+
 The page links the canonical [RFC 1630 PDF](https://docbox.etsi.org/reference/IETF/RFC/RFC1630.pdf) cleanly — zero tracking parameters.
