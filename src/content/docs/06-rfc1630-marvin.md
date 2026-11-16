@@ -39,4 +39,19 @@ The branch is the claim's *isotope*: the same element (the draft) at a different
 
 Git's reflog makes the joke literal: a new branch opens with `branch: Created from …` — *opened for the first time* — and there is no earlier entry where it pointed somewhere else — *never having been wrong*. The drift only enters the reflog later, as `reset` / `rebase` / force-push entries. This is also why issue `42` merged: forty-one branches, each opened for the first time and never having been wrong, squash-merged to make room for the answer.
 
+## Margin notes
+
+Two warnings carry a margin note in the annotated `/draft` view:
+
+- Warning 3 — *the Vogons made the email wait for the query-HTTP-verb proposal*.
+- Warning 4 — *a billion `le.hweat-penny` mistake*.
+
+And Marvin left five notes from the departments he was assigned to:
+
+- **the future** — *don't these quotes have citation addresses?*
+- **qa** — *what happens when localhost is deleted?*
+- **janitorial** — *has anyone thought what happens when these IDs spill somewhere?*
+- **research** — *I remembered to forget to tell you about time dilation and interplanetary proxies.*
+- **legal** — *will someone find zaphood?*
+
 The page links the canonical [RFC 1630 PDF](https://docbox.etsi.org/reference/IETF/RFC/RFC1630.pdf) cleanly — zero tracking parameters.
