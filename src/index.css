@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lego-red-50: #fdeaea;
+  --color-lego-red-100: #f8c9cb;
+  --color-lego-red-200: #f09a9e;
+  --color-lego-red-300: #e76a70;
+  --color-lego-red-400: #e13b44;
+  --color-lego-red-500: #c8102e;
+  --color-lego-red-600: #a30d25;
+  --color-lego-red-700: #800a1d;
+  --color-lego-red-800: #5c0715;
+  --color-lego-red-900: #38040c;
+
+  --color-lego-yellow-50: #fdf6e3;
+  --color-lego-yellow-100: #fbe9b8;
+  --color-lego-yellow-200: #f8dc88;
+  --color-lego-yellow-300: #f6cf58;
+  --color-lego-yellow-400: #f4b41a;
+  --color-lego-yellow-500: #e5a000;
+  --color-lego-yellow-600: #c48900;
+  --color-lego-yellow-700: #9c6d00;
+
+  --color-lego-blue-50: #e7f0f9;
+  --color-lego-blue-100: #c3d9ee;
+  --color-lego-blue-200: #8fb8df;
+  --color-lego-blue-300: #5b96cf;
+  --color-lego-blue-400: #2f74bf;
+  --color-lego-blue-500: #0055a5;
+  --color-lego-blue-600: #00498c;
+  --color-lego-blue-700: #003b70;
+
+  --color-lego-green-50: #e5f6ec;
+  --color-lego-green-100: #bfe8d0;
+  --color-lego-green-200: #8ad7a8;
+  --color-lego-green-300: #4cc67e;
+  --color-lego-green-400: #1fb25f;
+  --color-lego-green-500: #00a651;
+  --color-lego-green-600: #008c45;
+  --color-lego-green-700: #006f37;
+
+  --color-lego-ink: #1a1a1a;
+  --color-lego-cream: #f7f3e8;
+  --color-lego-white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-lego-cream);
+  color: var(--color-lego-ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* A studded brick: the rounded top row is drawn by the Brick component's
+   absolutely-positioned studs; this keeps the body simple. */
+.lego-shadow {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.lego-dotgrid {
+  background-image: radial-gradient(circle, rgba(26, 26, 26, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
