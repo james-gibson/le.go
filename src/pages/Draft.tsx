@@ -198,6 +198,28 @@ export default function Draft() {
         </div>
       )}
 
+      <div className="mt-6 rounded-xl border-2 border-brick-blue-200 bg-brick-blue-50 p-4">
+        <div className="mb-2 text-xs font-black uppercase tracking-wider text-brick-blue-700">Branch provenance</div>
+        <p className="text-sm text-brick-ink/75">
+          Every revision of this draft — every edit Marvin made, every copy written in a different universe and saved
+          out of order — is a branch <strong>opened for the first time, never having been wrong</strong>.
+        </p>
+        <div className="mt-3 grid gap-2 text-sm sm:grid-cols-3">
+          <div className="rounded-lg bg-brick-white p-3">
+            <span className="font-black uppercase tracking-wider text-brick-blue-600 text-xs">Opened for the first time</span>
+            <p className="mt-1">born at R⁰ — <code>42 + 0i</code>, seed-42 ground truth. Not a correction to a prior wrong version; a fresh anchor.</p>
+          </div>
+          <div className="rounded-lg bg-brick-white p-3">
+            <span className="font-black uppercase tracking-wider text-brick-green-600 text-xs">Never having been wrong</span>
+            <p className="mt-1">42i distance is zero at the moment of opening. “Wrong” is a drift that accrues afterward, never a condition of birth.</p>
+          </div>
+          <div className="rounded-lg bg-brick-white p-3">
+            <span className="font-black uppercase tracking-wider text-brick-red-600 text-xs">Different universe, saved out of order</span>
+            <p className="mt-1">the drift source, not the birth. Arriving late (or early) from another universeId is how a branch gains distance after it opens.</p>
+          </div>
+        </div>
+      </div>
+
       <div className="mt-6 rounded-xl border-2 border-brick-ink/10 bg-brick-white p-4">
         <div className="flex items-center gap-3">
           <button
