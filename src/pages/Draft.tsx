@@ -218,6 +218,13 @@ export default function Draft() {
             <p className="mt-1">the drift source, not the birth. Arriving late (or early) from another universeId is how a branch gains distance after it opens.</p>
           </div>
         </div>
+        <p className="mt-3 text-sm text-brick-ink/75">
+          Git's reflog makes it literal: a new branch opens with <code className="mono">branch: Created from …</code> —
+          <em>opened for the first time</em> — and there is no earlier entry where it pointed somewhere else — <em>never
+          having been wrong</em>. The drift only enters the reflog later, as reset / rebase / force-push entries. This is
+          also why issue <code>42</code> merged: forty-one branches, each opened for the first time and never having been
+          wrong, squash-merged to make room for the answer.
+        </p>
       </div>
 
       <div className="mt-6 rounded-xl border-2 border-brick-ink/10 bg-brick-white p-4">
