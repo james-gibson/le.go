@@ -1,0 +1,656 @@
+{
+  "work": "series:madhouse_mixtapes:open_arms:2026",
+  "seekLead": 1,
+  "transcribedFrom": "YouTube auto-generated captions (asr), English; fetched 2026-11-15",
+  "audit": "full line-addressed pass over the auto-caption cues. Lines flagged 'uncertain_word' are audible but garbled in auto-captions; listen before quoting. Section grouping is an editorial philosophy layer over the recording.",
+  "sections": [
+    {
+      "id": "preamble",
+      "order": 1,
+      "thesis": "scope and respect — speaking for himself, not at anyone"
+    },
+    {
+      "id": "ethic",
+      "order": 2,
+      "thesis": "for the people, by the people; no marble stages"
+    },
+    {
+      "id": "kindness",
+      "order": 3,
+      "thesis": "the door is open; any faith, any face, any scar"
+    },
+    {
+      "id": "axiom",
+      "order": 4,
+      "thesis": "neon glows, it don't shine"
+    },
+    {
+      "id": "method",
+      "order": 5,
+      "thesis": "ADHD as production style; requests, languages, comments"
+    },
+    {
+      "id": "wildness",
+      "order": 6,
+      "thesis": "the madhouse keeps circles, not queues"
+    },
+    {
+      "id": "grant",
+      "order": 7,
+      "thesis": "use it how you want; credit; reciprocate"
+    },
+    {
+      "id": "credo",
+      "order": 8,
+      "thesis": "not here to outshine you — here to help you glow"
+    }
+  ],
+  "lines": [
+    {
+      "id": "l001",
+      "section": "preamble",
+      "text": "Madhouse Mixtapes, like and subscribe.",
+      "cueStart": 0,
+      "t": 0,
+      "tEnd": 3,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l002",
+      "section": "preamble",
+      "text": "Whoop whoop, mad love fam.",
+      "cueStart": 3,
+      "t": 2,
+      "tEnd": 7,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l003",
+      "section": "preamble",
+      "text": "This ain't a diss to musicians, performers, or anybody protecting what they built.",
+      "cueStart": 7,
+      "t": 6,
+      "tEnd": 18,
+      "confidence": 0.92,
+      "flags": []
+    },
+    {
+      "id": "l004",
+      "section": "preamble",
+      "text": "I respect that. I push them too.",
+      "cueStart": 18,
+      "t": 17,
+      "tEnd": 23,
+      "confidence": 0.8,
+      "flags": [
+        "uncertain_word"
+      ]
+    },
+    {
+      "id": "l005",
+      "section": "preamble",
+      "text": "I'm just speaking for me.",
+      "cueStart": 23,
+      "t": 22,
+      "tEnd": 27,
+      "confidence": 0.92,
+      "flags": []
+    },
+    {
+      "id": "l006",
+      "section": "ethic",
+      "text": "Open arms. Open doors. Come on in.",
+      "cueStart": 27,
+      "t": 26,
+      "tEnd": 41,
+      "confidence": 0.92,
+      "flags": []
+    },
+    {
+      "id": "l007",
+      "section": "ethic",
+      "text": "I'm for the people, by the people. That's the code I keep.",
+      "cueStart": 43,
+      "t": 42,
+      "tEnd": 47,
+      "confidence": 0.92,
+      "flags": []
+    },
+    {
+      "id": "l008",
+      "section": "ethic",
+      "text": "Music's just a way I talk when pain is buried deep.",
+      "cueStart": 47,
+      "t": 46,
+      "tEnd": 51,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l009",
+      "section": "ethic",
+      "text": "I ain't good for marble stages, gold thrones, fake perfume.",
+      "cueStart": 51,
+      "t": 50,
+      "tEnd": 53,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l010",
+      "section": "ethic",
+      "text": "I was raised with mud sticks heavy in the backroads, always low.",
+      "cueStart": 53,
+      "t": 52,
+      "tEnd": 56,
+      "confidence": 0.78,
+      "flags": [
+        "uncertain_word"
+      ]
+    },
+    {
+      "id": "l011",
+      "section": "ethic",
+      "text": "My listeners, if you need me, I respond in kind.",
+      "cueStart": 56,
+      "t": 55,
+      "tEnd": 59,
+      "confidence": 0.78,
+      "flags": [
+        "uncertain_word"
+      ]
+    },
+    {
+      "id": "l012",
+      "section": "ethic",
+      "text": "Community's what I'm building and entertaining by design.",
+      "cueStart": 59,
+      "t": 58,
+      "tEnd": 62,
+      "confidence": 0.88,
+      "flags": []
+    },
+    {
+      "id": "l013",
+      "section": "ethic",
+      "text": "People laugh at how I'm thinking — shoot, this fine.",
+      "cueStart": 62,
+      "t": 61,
+      "tEnd": 64,
+      "confidence": 0.75,
+      "flags": [
+        "uncertain_word"
+      ]
+    },
+    {
+      "id": "l014",
+      "section": "ethic",
+      "text": "I'm still the clown, juggalo about the sticks, wipe the dirt and hold it down.",
+      "cueStart": 64,
+      "t": 63,
+      "tEnd": 67,
+      "confidence": 0.86,
+      "flags": []
+    },
+    {
+      "id": "l015",
+      "section": "kindness",
+      "text": "From the sticks and mud I came, from the pressure and the strain.",
+      "cueStart": 67,
+      "t": 66,
+      "tEnd": 71,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l016",
+      "section": "kindness",
+      "text": "From the folks who got talked over, from the scars that still remain.",
+      "cueStart": 71,
+      "t": 70,
+      "tEnd": 73,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l017",
+      "section": "kindness",
+      "text": "So if you feel like no one hears you, if your voice got shoved aside.",
+      "cueStart": 73,
+      "t": 72,
+      "tEnd": 77,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l018",
+      "section": "kindness",
+      "text": "Pull up close, the door is open. You don't have to hurt alone no more.",
+      "cueStart": 77,
+      "t": 76,
+      "tEnd": 80,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l019",
+      "section": "axiom",
+      "text": "Neon glows, it don't shine.",
+      "cueStart": 80,
+      "t": 79,
+      "tEnd": 82,
+      "confidence": 0.92,
+      "flags": []
+    },
+    {
+      "id": "l020",
+      "section": "kindness",
+      "text": "Spotlights never fit in my mind.",
+      "cueStart": 82,
+      "t": 81,
+      "tEnd": 86,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l021",
+      "section": "kindness",
+      "text": "I don't want to stand above. I just want to light you up.",
+      "cueStart": 86,
+      "t": 85,
+      "tEnd": 92,
+      "confidence": 0.85,
+      "flags": [
+        "uncertain_word"
+      ]
+    },
+    {
+      "id": "l022",
+      "section": "kindness",
+      "text": "Open arms, open doors. You don't have to hurt alone no more.",
+      "cueStart": 92,
+      "t": 91,
+      "tEnd": 98,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l023",
+      "section": "kindness",
+      "text": "Any faith, any face, any scar, any pain, you are welcome just the same.",
+      "cueStart": 98,
+      "t": 97,
+      "tEnd": 102,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l024",
+      "section": "kindness",
+      "text": "Neon glow through every wall. Lost don't mean there ain't no room.",
+      "cueStart": 102,
+      "t": 101,
+      "tEnd": 108,
+      "confidence": 0.88,
+      "flags": []
+    },
+    {
+      "id": "l025",
+      "section": "kindness",
+      "text": "If you need a voice, step in. This is where your light begins.",
+      "cueStart": 108,
+      "t": 107,
+      "tEnd": 114,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l026",
+      "section": "method",
+      "text": "I take requests from time to time. If the vibe feels right, I can bend the song through languages and still keep my side.",
+      "cueStart": 114,
+      "t": 113,
+      "tEnd": 121,
+      "confidence": 0.86,
+      "flags": []
+    },
+    {
+      "id": "l027",
+      "section": "method",
+      "text": "Any tongue, same perspective, still my fingerprints remain.",
+      "cueStart": 121,
+      "t": 120,
+      "tEnd": 124,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l028",
+      "section": "method",
+      "text": "Same mad love, same heart pressure, same blood inside the frame.",
+      "cueStart": 124,
+      "t": 123,
+      "tEnd": 126,
+      "confidence": 0.86,
+      "flags": []
+    },
+    {
+      "id": "l029",
+      "section": "method",
+      "text": "Happy stories shared from comments from the people in the crowd.",
+      "cueStart": 126,
+      "t": 125,
+      "tEnd": 129,
+      "confidence": 0.86,
+      "flags": []
+    },
+    {
+      "id": "l030",
+      "section": "method",
+      "text": "From the ones who need a laugh, from the ones who grieve out loud.",
+      "cueStart": 129,
+      "t": 128,
+      "tEnd": 132,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l031",
+      "section": "method",
+      "text": "I'm mad. I speak tapes, I tap in, try to answer quick as hell.",
+      "cueStart": 132,
+      "t": 131,
+      "tEnd": 135,
+      "confidence": 0.7,
+      "flags": [
+        "uncertain_word"
+      ]
+    },
+    {
+      "id": "l032",
+      "section": "method",
+      "text": "Sometimes minds flood like rivers, that's why songs fit me so well.",
+      "cueStart": 135,
+      "t": 134,
+      "tEnd": 137,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l033",
+      "section": "method",
+      "text": "Books get chained with dust and key. ADHD hits fast, so I hammer stones and beats and let the echoes out at last.",
+      "cueStart": 137,
+      "t": 136,
+      "tEnd": 144,
+      "confidence": 0.86,
+      "flags": []
+    },
+    {
+      "id": "l034",
+      "section": "method",
+      "text": "They say corporate penny hunting, I'm the soup counting cons.",
+      "cueStart": 144,
+      "t": 143,
+      "tEnd": 148,
+      "confidence": 0.7,
+      "flags": [
+        "uncertain_word"
+      ]
+    },
+    {
+      "id": "l035",
+      "section": "axiom",
+      "text": "I'd rather build a movement where the broken know there's someone.",
+      "cueStart": 148,
+      "t": 147,
+      "tEnd": 151,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l036",
+      "section": "axiom",
+      "text": "Neon glows, it don't shine. Stars can keep that borrowed light.",
+      "cueStart": 151,
+      "t": 150,
+      "tEnd": 157,
+      "confidence": 0.92,
+      "flags": []
+    },
+    {
+      "id": "l037",
+      "section": "axiom",
+      "text": "I don't need that throne above. I just want to light you up.",
+      "cueStart": 157,
+      "t": 156,
+      "tEnd": 162,
+      "confidence": 0.88,
+      "flags": []
+    },
+    {
+      "id": "l038",
+      "section": "credo",
+      "text": "Open arms, open doors. You don't have to hurt alone no more.",
+      "cueStart": 162,
+      "t": 161,
+      "tEnd": 167,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l039",
+      "section": "credo",
+      "text": "Any faith, any face, any scar, any pain, you are welcome just the same.",
+      "cueStart": 167,
+      "t": 166,
+      "tEnd": 172,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l040",
+      "section": "credo",
+      "text": "Neon glow through every wall. Lost don't mean there ain't no room.",
+      "cueStart": 172,
+      "t": 171,
+      "tEnd": 178,
+      "confidence": 0.88,
+      "flags": []
+    },
+    {
+      "id": "l041",
+      "section": "credo",
+      "text": "If you need a voice, step in. This is where your light begins.",
+      "cueStart": 178,
+      "t": 177,
+      "tEnd": 182,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l042",
+      "section": "grant",
+      "text": "You can use the music how you want.",
+      "cueStart": 182,
+      "t": 181,
+      "tEnd": 186,
+      "confidence": 0.95,
+      "flags": [
+        "licence_basis"
+      ]
+    },
+    {
+      "id": "l043",
+      "section": "grant",
+      "text": "That's the truth right from the start.",
+      "cueStart": 186,
+      "t": 185,
+      "tEnd": 189,
+      "confidence": 0.95,
+      "flags": [
+        "licence_basis"
+      ]
+    },
+    {
+      "id": "l044",
+      "section": "grant",
+      "text": "Sample this and remix that.",
+      "cueStart": 189,
+      "t": 188,
+      "tEnd": 192,
+      "confidence": 0.95,
+      "flags": [
+        "licence_basis"
+      ]
+    },
+    {
+      "id": "l045",
+      "section": "grant",
+      "text": "Cut it up and bring it back.",
+      "cueStart": 192,
+      "t": 191,
+      "tEnd": 194,
+      "confidence": 0.95,
+      "flags": [
+        "licence_basis"
+      ]
+    },
+    {
+      "id": "l046",
+      "section": "grant",
+      "text": "Credit would be nice if you do.",
+      "cueStart": 194,
+      "t": 193,
+      "tEnd": 197,
+      "confidence": 0.95,
+      "flags": [
+        "licence_basis"
+      ]
+    },
+    {
+      "id": "l047",
+      "section": "grant",
+      "text": "If it blows, throw something back.",
+      "cueStart": 197,
+      "t": 196,
+      "tEnd": 200,
+      "confidence": 0.95,
+      "flags": [
+        "licence_basis"
+      ]
+    },
+    {
+      "id": "l048",
+      "section": "grant",
+      "text": "Views and comments mean a lot. Love is love, whether cash or not.",
+      "cueStart": 200,
+      "t": 199,
+      "tEnd": 207,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l049",
+      "section": "wildness",
+      "text": "Open arms in the madhouse. We keep circles in this house.",
+      "cueStart": 207,
+      "t": 206,
+      "tEnd": 213,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l050",
+      "section": "wildness",
+      "text": "All the demons, all the dreamers, all the healers, all believers.",
+      "cueStart": 213,
+      "t": 212,
+      "tEnd": 218,
+      "confidence": 0.88,
+      "flags": []
+    },
+    {
+      "id": "l051",
+      "section": "wildness",
+      "text": "Open arms, open doors. You don't have to hurt alone no more.",
+      "cueStart": 218,
+      "t": 217,
+      "tEnd": 223,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l052",
+      "section": "wildness",
+      "text": "All nations, all tongues, all fights, all lives. Come inside and feel alive.",
+      "cueStart": 223,
+      "t": 222,
+      "tEnd": 230,
+      "confidence": 0.88,
+      "flags": []
+    },
+    {
+      "id": "l053",
+      "section": "credo",
+      "text": "Neon glow through every sky. You don't got to hide who you are.",
+      "cueStart": 230,
+      "t": 229,
+      "tEnd": 237,
+      "confidence": 0.86,
+      "flags": []
+    },
+    {
+      "id": "l054",
+      "section": "credo",
+      "text": "If you thought your voice was gone, come in here and sing along.",
+      "cueStart": 237,
+      "t": 236,
+      "tEnd": 242,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l055",
+      "section": "credo",
+      "text": "Neon glows. It don't shine. That's the difference.",
+      "cueStart": 242,
+      "t": 241,
+      "tEnd": 249,
+      "confidence": 0.92,
+      "flags": []
+    },
+    {
+      "id": "l056",
+      "section": "credo",
+      "text": "I'm not here to outshine you. I'm here to help you glow.",
+      "cueStart": 249,
+      "t": 248,
+      "tEnd": 255,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l057",
+      "section": "credo",
+      "text": "Open arms. Open doors. Madhouse fam. Come on in, mad love fam.",
+      "cueStart": 255,
+      "t": 254,
+      "tEnd": 270,
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "id": "l058",
+      "section": "credo",
+      "text": "Open arms.",
+      "cueStart": 276,
+      "t": 275,
+      "tEnd": 280,
+      "confidence": 0.9,
+      "flags": []
+    }
+  ]
+}

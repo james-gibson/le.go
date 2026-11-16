@@ -1,0 +1,54 @@
+{
+  "universeId": "series:madhouse_mixtapes:open_arms:2026",
+  "title": "Open Arms | Haunted Polka Country Juggalo Trap Anthem",
+  "creators": ["SikMadMan"],
+  "uploader": "Madhouse Mixtapes",
+  "container": "YouTube",
+  "publishedYear": "2026",
+  "published": "2026-04-11",
+  "publishedTime": "2026-04-11T10:01:33-07:00",
+  "runtimeSec": 280,
+  "runtimeLabel": "4:40",
+  "realityRelation": "interpretation",
+  "fictionalizationDegree": 0.1,
+  "charge": "+1",
+  "plane": "42+0i",
+  "rotation": 0,
+  "url": "https://www.youtube.com/watch?v=ms0UbxUV9X8",
+  "inverseUrl": "https://music.youtube.com/watch?v=ms0UbxUV9X8",
+  "hubUrl": "https://linktr.ee/sikmadman",
+  "grant": {
+    "kind": "spoken_grant_in_work",
+    "grantor": "SikMadMan",
+    "t": 182,
+    "tEnd": 202,
+    "quote": "You can use the music how you want. That's the truth right from the start. Sample this and remix that. Cut it up and bring it back. Credit would be nice if you do. If it blows, throw something back.",
+    "covers": ["sampling", "remix", "derivative_commentary", "full_text_reproduction_for_commentary"],
+    "conditions": {
+      "credit": "requested_not_required",
+      "reciprocity": "requested_on_success_unquantified",
+      "resale": "not_stated"
+    },
+    "formalInstrument": null
+  },
+  "surfaceDiffs": [
+    {
+      "surface": "www.youtube.com",
+      "timestampSupport": "query (&t= / ?t=)",
+      "role": "authorial surface",
+      "note": "accepts playback timestamps as a query parameter"
+    },
+    {
+      "surface": "music.youtube.com",
+      "timestampSupport": "none",
+      "role": "catalogue / inverse surface",
+      "note": "work-level only; the same video id inside the music catalogue UI"
+    },
+    {
+      "surface": "le.go/bare",
+      "timestampSupport": "fragment (#l-grant)",
+      "role": "ad-free projection",
+      "note": "time as a fragment id the server never sees"
+    }
+  ]
+}

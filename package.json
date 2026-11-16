@@ -1,0 +1,38 @@
+{
+  "name": "le-go",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "le.go — a le.gume seed. The citation is the event; the medium of consumption is the projection.",
+  "homepage": "https://james-gibson.github.io/le.go/",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node scripts/postbuild.mjs && node scripts/deck.mjs && node scripts/verify-publish.mjs",
+    "preview": "vite preview",
+    "test": "node scripts/tests.mjs",
+    "guard": "node scripts/verify-publish.mjs",
+    "deck": "node scripts/deck.mjs",
+    "smoke": "node scripts/tests.mjs --smoke"
+  },
+  "dependencies": {
+    "lucide-react": "^1.72.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-markdown": "10.1.0",
+    "react-router-dom": "7.18.5",
+    "remark-gfm": "4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3",
+    "vite": "8.3.8"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

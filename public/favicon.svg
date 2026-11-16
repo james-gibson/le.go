@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="le.go">
+  <rect x="4" y="16" width="56" height="36" rx="4" fill="#e11d21"/>
+  <rect x="4" y="16" width="56" height="8" rx="4" fill="#c8102e"/>
+  <g fill="#e11d21" stroke="#c8102e" stroke-width="1">
+    <circle cx="16" cy="16" r="6" fill="#e11d21"/>
+    <circle cx="32" cy="16" r="6" fill="#e11d21"/>
+    <circle cx="48" cy="16" r="6" fill="#e11d21"/>
+  </g>
+  <g fill="#f4b41a" stroke="#b98a12" stroke-width="1">
+    <circle cx="16" cy="16" r="4"/>
+    <circle cx="32" cy="16" r="4"/>
+    <circle cx="48" cy="16" r="4"/>
+  </g>
+  <rect x="12" y="30" width="40" height="10" rx="2" fill="#f4b41a"/>
+  <text x="32" y="38" font-family="system-ui,sans-serif" font-size="7" font-weight="bold" text-anchor="middle" fill="#7a1f1f">le.go</text>
+</svg>
