@@ -25,4 +25,16 @@ The full memo lives at [`/draft`](/draft). The five warnings, condensed:
 
 > The dry grace note: with a brain the size of a planet and an unimplemented `mid:` scheme, Marvin counted every typo in RFC 1630 — `Reommendations` (p. 5), `astersik` and `sematics` (p. 7), `omiited` and `trainling` (p. 16), `mecahnism` and `distribted` (p. 19), and `Requiremnets` (p. 28). Those frozen typos prove Tim's own point on p. 2: once magic strings are printed on envelopes, it is impractical ever to convert them.
 
+## Branch provenance
+
+Every revision of this draft — every edit Marvin made, every copy written in a different universe and saved out of order — is a branch **opened for the first time, never having been wrong**.
+
+| Term | What it means |
+| --- | --- |
+| **Opened for the first time** | born at R⁰ — `42 + 0i`, seed-42 ground truth. Not a correction to a prior wrong version; a fresh anchor. |
+| **Never having been wrong** | `42i` distance is zero at the moment of opening. “Wrong” is a drift that accrues afterward, never a condition of birth. |
+| **Different universe, saved out of order** | the drift source, not the birth. Arriving late (or early) from another `universeId` is how a branch gains distance after it opens. |
+
+The branch is the claim's *isotope*: the same element (the draft) at a different mass number (the revisions it carries). Each new opening resets the anchor to `42`, and the out-of-order arrival is the `42i` distance it collects on the way to you.
+
 The page links the canonical [RFC 1630 PDF](https://docbox.etsi.org/reference/IETF/RFC/RFC1630.pdf) cleanly — zero tracking parameters.
