@@ -8,6 +8,7 @@ interface Warning {
   warning: string
   fix: string
   preset: string
+  margin?: string
 }
 
 const WARNINGS: Warning[] = [
@@ -34,6 +35,7 @@ const WARNINGS: Warning[] = [
     warning: 'The Event/Projection Schism: the same 20-second event reads as three different objects on three surfaces.',
     fix: 'The citation is the event; the medium of consumption is the projection. Time lives on the work’s own clock.',
     preset: 'https://www.youtube.com/watch?v=ms0UbxUV9X8&t=182',
+    margin: 'the Vogons made the email wait for the query-HTTP-verb proposal',
   },
   {
     n: 4,
@@ -42,6 +44,7 @@ const WARNINGS: Warning[] = [
     warning: 'Unanchored imaginary paths and null smuggling: a client can’t tell 42+0i from 0+42i without dereferencing.',
     fix: 'le.go enforces the isotope#12 ladder: null is no plane, 0 is never a charge, 42 and 42i are distinct run anchors.',
     preset: 'http://info.cern.ch:8000/imaginary/test',
+    margin: 'a billion le.hweat-penny mistake',
   },
   {
     n: 5,
@@ -51,6 +54,14 @@ const WARNINGS: Warning[] = [
     fix: 'le.go strips si=, utm_*, ltsid, fbclid on ingest, records what the format betrayed, and refuses void-universe resolution.',
     preset: 'https://youtu.be/ms0UbxUV9X8?si=…',
   },
+]
+
+const MARGIN_NOTES = [
+  { role: 'the future', note: 'don’t these quotes have citation addresses?' },
+  { role: 'qa', note: 'what happens when localhost is deleted?' },
+  { role: 'janitorial', note: 'has anyone thought what happens when these IDs spill somewhere?' },
+  { role: 'research', note: 'I remembered to forget to tell you about time dilation and interplanetary proxies.' },
+  { role: 'legal', note: 'will someone find zaphood?' },
 ]
 
 const RFC_TEXT = `Network Working Group                                         M. Paranoid Android
@@ -193,6 +204,7 @@ export default function Draft() {
                   try “{w.preset}” in the projector →
                 </a>
               </div>
+              {w.margin && <div className="mt-2 font-mono text-xs italic text-brick-ink/50">— {w.margin}</div>}
             </div>
           ))}
         </div>
@@ -225,6 +237,18 @@ export default function Draft() {
           also why issue <code>42</code> merged: forty-one branches, each opened for the first time and never having been
           wrong, squash-merged to make room for the answer.
         </p>
+      </div>
+
+      <div className="mt-6 rounded-xl border-2 border-brick-ink/10 bg-brick-white p-4">
+        <div className="mb-2 text-xs font-black uppercase tracking-wider text-brick-ink/60">Marvin’s margin notes</div>
+        <ul className="grid gap-2 text-sm sm:grid-cols-2">
+          {MARGIN_NOTES.map((m) => (
+            <li key={m.role} className="rounded-lg bg-brick-cream p-3">
+              <span className="font-black text-brick-red-600">Marvin from {m.role}:</span>{' '}
+              <span className="text-brick-ink/75">{m.note}</span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="mt-6 rounded-xl border-2 border-brick-ink/10 bg-brick-white p-4">
