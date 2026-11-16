@@ -1,8 +1,12 @@
-// le.go — the citation projector.
+// le.go — the citation projector and the 42i system, in one place.
 //
 // A "citation" here is a *projection* of one complex-space coordinate down onto a
 // flat typographic string. Nothing is lost until you ask for a flat shadow, and
-// you can cast a fresh shadow whenever a journal editor asks.
+// you can cast a fresh shadow whenever an editor asks.
+//
+// The projector casts those shadows faithfully — it does not fix them. The 42i
+// brief is the one place a citation is *rotated* (placed on the 42i plane), and
+// it is the only output that does so.
 
 export type Plane = '42+0i' | '0+42i' | '-42+0i' | '-42i'
 export type Rotation = 0 | 1 | 2 | 3
@@ -54,6 +58,8 @@ export interface Locator {
   t?: number
   tEnd?: number
   quote?: string
+  /** Only the 42i brief reads this — classic styles are always R⁰ flat shadows. */
+  rotation?: Rotation
 }
 
 export const STYLES: { id: StyleId; label: string }[] = [
@@ -65,7 +71,7 @@ export const STYLES: { id: StyleId; label: string }[] = [
   { id: 'ris', label: 'RIS' },
   { id: 'csl-json', label: 'CSL-JSON' },
   { id: 'markdown', label: 'Markdown quote + link' },
-  { id: 'brief', label: 'Executable research brief' },
+  { id: 'brief', label: '42i brief (the only rotating output)' },
 ]
 
 // ---------------------------------------------------------------------------
@@ -77,7 +83,7 @@ export interface PremisePiece {
   label: string
   move: string
   meaning: string
-  lego: string
+  note: string
 }
 
 export const PREMISE: PremisePiece[] = [
@@ -86,41 +92,41 @@ export const PREMISE: PremisePiece[] = [
     label: 'null',
     move: 'leave the hole empty',
     meaning: 'absence is no plane — never a value you can put in the graph',
-    lego: 'a missing brick is not a brick you can click into place',
+    note: 'canon: charges "1,-1,0" fail with a disconnected graph; absence is no compendium at all',
   },
   {
     key: 'not-null',
     label: 'not null',
     move: 'the hole is a piece',
     meaning: '"null exists" is itself a fact; unknown ≠ absent',
-    lego: 'the empty spot on the baseplate is information',
+    note: 'canon: zero-status "presumed"/"unestablished" is a status, distinct from no plane',
   },
   {
     key: 'zero-gt-one',
     label: '0 > 1',
     move: 'a silent zero outranks a spoken one',
     meaning: 'a zeroed field is a claim that disconnects the graph (ErrDisconnected)',
-    lego: 'a brick with no studs looks neutral but joins nothing',
+    note: 'canon: a neutral compendium cannot enter the graph; zero charge is not "neutral", it is disconnected',
   },
   {
     key: 'forty-two-is-zero',
     label: '42 = 0',
     move: 'every universe agrees where zero sits',
-    meaning: '42 is the shared origin, so you can rotate into 0 + 42i without drifting off the plane',
-    lego: 'the baseplate is the origin; every rotation is measured from the same corner',
+    meaning: '42 is the shared origin — a coordinate, not a credential',
+    note: 'canon: anchor 42; base == 0 → 42; 42 is where every load-bearing compendium meets',
   },
 ]
 
 export function anchorFor(r: Rotation): { anchor: '42' | '42i'; plane: Plane; charge: string; note: string } {
   switch (r) {
     case 0:
-      return { anchor: '42', plane: '42+0i', charge: '+1', note: 'proven consensus — asserted' }
+      return { anchor: '42', plane: '42+0i', charge: '+1', note: 'seed-42 ground truth — proven consensus' }
     case 1:
-      return { anchor: '42i', plane: '0+42i', charge: '-1', note: 'working hypothesis — not asserted' }
+      return { anchor: '42i', plane: '0+42i', charge: '-1', note: 'working hypothesis — 42i distance from nominal' }
     case 2:
       return { anchor: '42', plane: '-42+0i', charge: '-1', note: 'contradiction — sign flip (R² = −1)' }
     case 3:
-      return { anchor: '42i', plane: '-42i', charge: '-1', note: 'hypothesis, opposing sector' }
+      return { anchor: '42i', plane: '-42i', charge: '-1', note: 'opposing hypothesis' }
   }
 }
 
@@ -132,6 +138,25 @@ export function assertCharge(charge: number): string | null {
   // charge 0 is the disconnected graph — never a valid plane.
   return charge === 0 ? 'ErrDisconnected' : null
 }
+
+// The capability lattice from the isotope protocol. Same plane, same measure:
+// how far a thing has drifted from nominal (ground truth).
+export interface Rung {
+  n: number
+  name: string
+  maxDistance: number
+  means: string
+}
+
+export const RUNG_LATTICE: Rung[] = [
+  { n: 0, name: 'Absolute Zero', maxDistance: 0, means: 'loads without crashing' },
+  { n: 1, name: 'Read-Only', maxDistance: 20, means: 'entropy and isotope variation pass' },
+  { n: 2, name: 'Harness Tools', maxDistance: 60, means: 'known tool scope, input correlation' },
+  { n: 3, name: 'Mock Secrets', maxDistance: 100, means: 'safe isotope handling, declared behaviour' },
+  { n: 4, name: 'Higher Authority', maxDistance: 140, means: 'independent decisions, timing uncorrelated' },
+  { n: 5, name: 'Delegation', maxDistance: 180, means: 'can delegate to peers' },
+  { n: 6, name: 'Certification', maxDistance: 220, means: 'can certify others' },
+]
 
 // ---------------------------------------------------------------------------
 // The four dimensions a classic citation throws away.
@@ -177,7 +202,7 @@ export function formatTime(sec: number): string {
 }
 
 // ---------------------------------------------------------------------------
-// Projection.
+// Projection. Classic styles are flat R⁰ shadows; the 42i brief is the rotation.
 // ---------------------------------------------------------------------------
 
 const creators = (u: Universe) => u.creators.join(', ')
@@ -191,7 +216,7 @@ export function project(u: Universe, style: StyleId, loc: Locator = {}): string 
   switch (style) {
     case 'apa7': {
       // APA takes the *uploading account* as author — the exact misattribution
-      // this seed exists to demonstrate.
+      // this seed exists to demonstrate, and one the projector refuses to fix.
       const date = dp ? `(${dp.y}, ${dp.monLong} ${Number(dp.d)})` : `(${year})`
       return `${u.uploader}. ${date}. ${u.title} [Video]. ${u.container}. ${url}`
     }
@@ -236,20 +261,20 @@ export function project(u: Universe, style: StyleId, loc: Locator = {}): string 
       return `${quote}— ${creators(u)}, *${u.title}*, ${link}.`
     }
     case 'brief': {
-      const t = loc.t != null ? loc.t : u.grant.t
-      const tEnd = loc.tEnd != null ? loc.tEnd : u.grant.tEnd
+      const rot = loc.rotation ?? 0
+      const a = anchorFor(rot)
+      const t = loc.t ?? u.grant.t
+      const tEnd = loc.tEnd ?? u.grant.tEnd
       return [
-        `# Research brief — ${u.universeId}`,
+        `# 42i brief — ${u.universeId}`,
         '',
         `- **event:** ${u.title} — ${creators(u)} (${u.container}, ${year})`,
         `- **clock:** [${formatTime(t)}, ${formatTime(tEnd)}) on the work's own epoch`,
+        `- **rotation:** R${rot} → plane ${a.plane} · anchor ${a.anchor} · charge ${a.charge}`,
+        `- **status:** ${a.note}`,
         `- **realityRelation:** ${u.realityRelation} (fictionalizationDegree ${u.fictionalizationDegree})`,
-        `- **plane:** ${u.plane} (anchor ${anchorFor(u.rotation).anchor}, charge ${u.charge})`,
         `- **licenceBasis:** ${u.grant.kind} by ${u.grant.grantor} — ${u.grant.conditions.credit}`,
-        `- **authorial surface:** ${u.url}`,
-        `- **inverse surface:** ${u.inverseUrl}`,
-        `- **hub:** ${u.hubUrl}`,
-        `- **researchInstructions:** resolve → verify → promote; keep the event on its clock, record your projection honestly.`,
+        `- **surfaces:** ${u.url} · ${u.inverseUrl} · ${u.hubUrl}`,
       ].join('\n')
     }
   }

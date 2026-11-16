@@ -3,21 +3,21 @@ import type { ReactNode } from 'react'
 type BrickColor = 'red' | 'yellow' | 'blue' | 'green' | 'white' | 'ink'
 
 const BODY: Record<BrickColor, string> = {
-  red: 'bg-lego-red-500 text-lego-white',
-  yellow: 'bg-lego-yellow-400 text-lego-ink',
-  blue: 'bg-lego-blue-500 text-lego-white',
-  green: 'bg-lego-green-500 text-lego-white',
-  white: 'bg-lego-white text-lego-ink border-2 border-lego-ink/15',
-  ink: 'bg-lego-ink text-lego-white',
+  red: 'bg-brick-red-500 text-brick-white',
+  yellow: 'bg-brick-yellow-400 text-brick-ink',
+  blue: 'bg-brick-blue-500 text-brick-white',
+  green: 'bg-brick-green-500 text-brick-white',
+  white: 'bg-brick-white text-brick-ink border-2 border-brick-ink/15',
+  ink: 'bg-brick-ink text-brick-white',
 }
 
 const STUD: Record<BrickColor, string> = {
-  red: 'bg-lego-red-400 border-lego-red-700',
-  yellow: 'bg-lego-yellow-300 border-lego-yellow-600',
-  blue: 'bg-lego-blue-400 border-lego-blue-700',
-  green: 'bg-lego-green-400 border-lego-green-700',
-  white: 'bg-lego-white border-lego-ink/25',
-  ink: 'bg-lego-ink border-lego-white/30',
+  red: 'bg-brick-red-400 border-brick-red-700',
+  yellow: 'bg-brick-yellow-300 border-brick-yellow-600',
+  blue: 'bg-brick-blue-400 border-brick-blue-700',
+  green: 'bg-brick-green-400 border-brick-green-700',
+  white: 'bg-brick-white border-brick-ink/25',
+  ink: 'bg-brick-ink border-brick-white/30',
 }
 
 export function Brick({
@@ -35,7 +35,7 @@ export function Brick({
 }) {
   return (
     <div className={`relative ${className}`}>
-      <div className={`lego-shadow rounded-xl px-4 pb-4 pt-5 ${BODY[color]}`}>
+      <div className={`brick-shadow rounded-xl px-4 pb-4 pt-5 ${BODY[color]}`}>
         {label && (
           <div className="mb-1 text-xs font-black uppercase tracking-wider opacity-80">{label}</div>
         )}

@@ -141,55 +141,55 @@ export default function Draft() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="text-3xl font-black tracking-tight text-lego-ink">/draft — a delayed erratum to RFC 1630</h1>
-      <p className="mt-2 text-lg text-lego-ink/65">
+      <h1 className="text-3xl font-black tracking-tight text-brick-ink">/draft — a delayed erratum to RFC 1630</h1>
+      <p className="mt-2 text-lg text-brick-ink/65">
         Marvin the Paranoid Android drafted a reply to Tim Berners-Lee in June 1994. It arrived 32 years late, for two
         strictly RFC-1630-compliant reasons.
       </p>
 
       <div className="mt-6 flex flex-wrap items-center gap-2">
         <button
-          className={`rounded-lg px-3 py-1.5 text-sm font-bold ${view === 'annotated' ? 'bg-lego-ink text-lego-yellow-400' : 'bg-lego-cream text-lego-ink/70'}`}
+          className={`rounded-lg px-3 py-1.5 text-sm font-bold ${view === 'annotated' ? 'bg-brick-ink text-brick-yellow-400' : 'bg-brick-cream text-brick-ink/70'}`}
           onClick={() => setView('annotated')}
         >
           Annotated brick view
         </button>
         <button
-          className={`rounded-lg px-3 py-1.5 text-sm font-bold ${view === 'plain' ? 'bg-lego-ink text-lego-yellow-400' : 'bg-lego-cream text-lego-ink/70'}`}
+          className={`rounded-lg px-3 py-1.5 text-sm font-bold ${view === 'plain' ? 'bg-brick-ink text-brick-yellow-400' : 'bg-brick-cream text-brick-ink/70'}`}
           onClick={() => setView('plain')}
         >
           RFC plaintext (72-col)
         </button>
-        <a className="rounded-lg bg-lego-blue-500 px-3 py-1.5 text-sm font-bold text-lego-white" href="https://docbox.etsi.org/reference/IETF/RFC/RFC1630.pdf" target="_blank" rel="external noopener noreferrer">
+        <a className="rounded-lg bg-brick-blue-500 px-3 py-1.5 text-sm font-bold text-brick-white" href="https://docbox.etsi.org/reference/IETF/RFC/RFC1630.pdf" target="_blank" rel="external noopener noreferrer">
           RFC 1630 (PDF)
         </a>
       </div>
 
       {view === 'plain' ? (
-        <pre className="mono mt-6 overflow-x-auto rounded-lg bg-lego-white p-4 text-xs leading-relaxed">{RFC_TEXT.join('\n')}</pre>
+        <pre className="mono mt-6 overflow-x-auto rounded-lg bg-brick-white p-4 text-xs leading-relaxed">{RFC_TEXT.join('\n')}</pre>
       ) : (
         <div className="mt-6 grid gap-4">
           {WARNINGS.map((w) => (
-            <div key={w.n} className="rounded-xl border-2 border-lego-ink/10 bg-lego-white p-4">
+            <div key={w.n} className="rounded-xl border-2 border-brick-ink/10 bg-brick-white p-4">
               <div className="mb-2 flex items-center gap-3">
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-lego-red-500 text-sm font-black text-lego-white">{w.n}</span>
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brick-red-500 text-sm font-black text-brick-white">{w.n}</span>
                 <div>
-                  <div className="font-bold text-lego-ink">{w.rfc}</div>
-                  <blockquote className="text-sm text-lego-ink/60">{w.quote}</blockquote>
+                  <div className="font-bold text-brick-ink">{w.rfc}</div>
+                  <blockquote className="text-sm text-brick-ink/60">{w.quote}</blockquote>
                 </div>
               </div>
               <div className="mt-2 grid gap-2 text-sm sm:grid-cols-2">
-                <div className="rounded-lg bg-lego-red-50 p-3">
-                  <span className="font-black uppercase tracking-wider text-lego-red-600 text-xs">Marvin’s warning</span>
+                <div className="rounded-lg bg-brick-red-50 p-3">
+                  <span className="font-black uppercase tracking-wider text-brick-red-600 text-xs">Marvin’s warning</span>
                   <p className="mt-1">{w.warning}</p>
                 </div>
-                <div className="rounded-lg bg-lego-green-50 p-3">
-                  <span className="font-black uppercase tracking-wider text-lego-green-600 text-xs">How le.go fixes it</span>
+                <div className="rounded-lg bg-brick-green-50 p-3">
+                  <span className="font-black uppercase tracking-wider text-brick-green-600 text-xs">How le.go fixes it</span>
                   <p className="mt-1">{w.fix}</p>
                 </div>
               </div>
               <div className="mt-2">
-                <a className="font-mono text-xs text-lego-blue-600 underline" href={`/le.go/projector`}>
+                <a className="font-mono text-xs text-brick-blue-600 underline" href={`/le.go/projector`}>
                   try “{w.preset}” in the projector →
                 </a>
               </div>
@@ -198,26 +198,26 @@ export default function Draft() {
         </div>
       )}
 
-      <div className="mt-6 rounded-xl border-2 border-lego-ink/10 bg-lego-white p-4">
+      <div className="mt-6 rounded-xl border-2 border-brick-ink/10 bg-brick-white p-4">
         <div className="flex items-center gap-3">
           <button
-            className={`rounded-lg px-3 py-1.5 text-sm font-bold ${vogon ? 'bg-lego-red-500 text-lego-white' : 'bg-lego-cream text-lego-ink/70'}`}
+            className={`rounded-lg px-3 py-1.5 text-sm font-bold ${vogon ? 'bg-brick-red-500 text-brick-white' : 'bg-brick-cream text-brick-ink/70'}`}
             onClick={() => setVogon((v) => !v)}
           >
             Vogon Diff
           </button>
-          <p className="text-sm text-lego-ink/60">
+          <p className="text-sm text-brick-ink/60">
             Toggle the line-wrap whitespace and <code>%2F</code> unescaping damage the Vogons inflicted (RFC 1630 pp. 5 &amp; 8–9).
           </p>
         </div>
         {vogon && (
-          <pre className="mono mt-3 overflow-x-auto rounded-lg bg-lego-cream p-3 text-xs text-lego-red-700">
+          <pre className="mono mt-3 overflow-x-auto rounded-lg bg-brick-cream p-3 text-xs text-brick-red-700">
             {'X-Vogon-Quarantine: HELD 32y 5m 0d (Form 27B%2F6 hierarchical\n  slash fault; 3 stanzas attached; terrible)\n  ^ unescaped %2F -> "/" (p. 9: they are NOT identical)\n  ^ folded at column 66 (p. 5: whitespace is risky in mail)'}
           </pre>
         )}
       </div>
 
-      <p className="mt-6 text-sm text-lego-ink/50">
+      <p className="mt-6 text-sm text-brick-ink/50">
         A parody/educational artifact, not an IETF publication. It links the canonical RFC 1630 cleanly, with zero
         tracking parameters.
       </p>

@@ -10,19 +10,22 @@ import { watchUrl } from '../lib/open-arms'
 const STEP_COLOR = ['yellow', 'blue', 'green', 'red'] as const
 
 export default function Home() {
-  usePageMeta('Manual', 'The citation is the event; the medium of consumption is the projection.')
+  usePageMeta('le.go — the 42i system', 'The 42i system, introduced in one place, using citations as its domain.')
 
   return (
-    <div className="lego-dotgrid">
+    <div className="brick-dotgrid">
       <div className="mx-auto max-w-6xl px-4 py-10">
         <div className="mb-8 text-center">
-          <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-lego-ink px-4 py-1 text-xs font-black uppercase tracking-widest text-lego-yellow-400">
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-brick-ink px-4 py-1 text-xs font-black uppercase tracking-widest text-brick-yellow-400">
             <span className="text-base">☕</span> Don’t Panic
           </div>
-          <h1 className="text-4xl font-black tracking-tight text-lego-ink sm:text-5xl">le.go</h1>
-          <p className="mx-auto mt-3 max-w-2xl text-lg text-lego-ink/70">
-            The citation is the event; the medium of consumption is the projection. An instruction manual for snapping
-            citations apart and putting them back together.
+          <h1 className="text-4xl font-black tracking-tight text-brick-ink sm:text-5xl">le.go</h1>
+          <p className="mx-auto mt-2 max-w-2xl text-sm font-black uppercase tracking-widest text-brick-red-500">
+            the 42i system · introduced in one place · a le.gume seed deploy
+          </p>
+          <p className="mx-auto mt-3 max-w-2xl text-lg text-brick-ink/70">
+            The citation is the event; the medium of consumption is the projection. A brick-set manual for one hard
+            idea: snap citations apart, put them back together, and see why the classic styles are lossy.
           </p>
         </div>
 
@@ -50,7 +53,7 @@ export default function Home() {
                 <Brick color={STEP_COLOR[i]} studs={i + 1} label={piece.label} className="max-w-none">
                   <p className="text-base font-semibold">{piece.move}</p>
                   <p className="mt-1 text-sm opacity-90">{piece.meaning}</p>
-                  <p className="mt-1 font-mono text-xs opacity-70">{piece.lego}</p>
+                  <p className="mt-1 font-mono text-xs opacity-70">{piece.note}</p>
                 </Brick>
               </div>
             </section>
@@ -71,7 +74,8 @@ export default function Home() {
             <Link className="font-bold underline" to="/philosophy">Open philosophy →</Link>
           </Brick>
           <Brick color="red" studs={3} label="The projector">
-            Snap bricks, rotate R⁰–R³ across 42+0i / 0+42i, and cast shadows back to APA, MLA, Chicago, and friends.{' '}
+            Cast faithful, lossy shadows to APA, MLA, Chicago, and friends — the projector does not fix them. Rotate only
+            in the 42i brief.{' '}
             <Link className="font-bold underline" to="/projector">Open projector →</Link>
           </Brick>
         </div>
